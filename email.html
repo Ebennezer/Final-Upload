@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Corporation Notification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    /* Some clients ignore <style>, so all critical stuff is inline below.
+       This is just a small fallback for modern clients. */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #FCFCF9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#FCFCF9;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color:#FCFCF9; padding:24px 0;">
+    <tr>
+      <td align="center">
+        <!-- Card -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:600px; background-color:#FFFFFF; border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(19,52,59,0.12);">
+          <!-- Header -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#13343B,#21808D); padding:20px 24px; text-align:left;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <div style="font-size:18px; font-weight:600; color:#FFFFFF; letter-spacing:0.04em; text-transform:uppercase;">
+                      Corporation
+                    </div>
+                    <div style="margin-top:4px; font-size:13px; color:rgba(252,252,249,0.85);">
+                      Smart Employee Management System
+                    </div>
+                  </td>
+                  <td align="right" style="font-size:12px; color:rgba(252,252,249,0.75);">
+                    <!-- Optional status pill -->
+                    <span style="display:inline-block; padding:4px 10px; border-radius:999px; background-color:rgba(50,184,198,0.16); color:#FCFCF9;">
+                      Notification
+                    </span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding:24px 24px 8px 24px; color:#13343B;">
+              <p style="margin:0 0 12px 0; font-size:16px; font-weight:600;">
+                Hi {{NAME}},
+              </p>
+
+              <p style="margin:0 0 16px 0; font-size:14px; line-height:1.6; color:#424747;">
+                {{TEXT}}
+              </p>
+
+              <!-- Optional highlight box -->
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:16px 0 8px 0;">
+                <tr>
+                  <td style="background-color:rgba(33,128,141,0.06); border-radius:8px; padding:12px 14px; font-size:13px; color:#13343B;">
+                    <strong style="color:#21808D;">Tip:</strong>
+                    You can always sign in to your CityLink Live dashboard to review your profile,
+                    payroll history, and upcoming schedules.
+                  </td>
+                </tr>
+              </table>
+
+              <!-- CTA button (optional, you can replace href later in PHP with str_replace) -->
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:18px 0 8px 0;">
+                <tr>
+                  <td>
+                    <a href="{{CTA_URL}}" style="
+                        display:inline-block;
+                        padding:10px 22px;
+                        border-radius:999px;
+                        background-color:#21808D;
+                        color:#FFFFFF;
+                        font-size:14px;
+                        font-weight:500;
+                        text-decoration:none;">
+                     {{CTA_TEXT}}
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <p style="margin:18px 0 0 0; font-size:12px; line-height:1.6; color:#777C7C;">
+                If you didn’t expect this email, you can safely ignore it.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr>
+            <td style="padding:0 24px;">
+              <hr style="border:none; border-top:1px solid rgba(119,124,124,0.18); margin:8px 0 0 0;">
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:12px 24px 20px 24px; font-size:11px; color:#777C7C;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="font-size:11px; color:#777C7C;">
+                    © <?php echo date('Y'); ?> Corporation . All rights reserved.
+                  </td>
+                  <td align="right" style="font-size:11px; color:#777C7C;">
+                    <span style="color:#E68161;">●</span>
+                    <span style="margin-left:4px;">Atlanta, GA</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
